@@ -34,3 +34,12 @@ body {
 .App-wrapper {
   padding: 30px;
 }
+
+.App-timer {
+  background-color: #e4e4e4;
+  margin-bottom: 24px;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}

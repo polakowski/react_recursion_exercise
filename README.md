@@ -2,7 +2,8 @@
 This is a template app for React Exercise.
 
 ## How to start the application
-Just run `npm start`. App will be available at `localhost:3000`.
+- `yarn install`
+- `yarn start`
 
 ## Instructions
 Write a React component, that receives array of React Component classes (e.g. "One", "Two", "Three") as prop, then **recursively** renders HTML with those components:
@@ -18,11 +19,11 @@ Write a React component, that receives array of React Component classes (e.g. "O
 Let the produced html be as followed:
 
 ```html
-<div class='box'>
+<div class='App-box'>
   One
-  <div class='box'>
+  <div class='App-box'>
     Two
-    <div class='box'>
+    <div class='App-box'>
       Three
     </div>
   </div>
@@ -34,3 +35,6 @@ Files that should be edited:
 - src/recursion/RecursiveComponent.js
 
 Do not edit any other files.
+
+### Bonus exercise
+Modify your `One`, `Two` and `Three` components, so they don't re-render on every timer tick. `RecursiveComponent` can re-render, but each component in recursive function shouldn't.

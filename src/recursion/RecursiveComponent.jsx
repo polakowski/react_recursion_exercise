@@ -1,14 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class RecursiveComponent extends Component {
+function RecursiveComponent(props) {
+  const {
+    components,
+  } = props;
 
-	// write recursive method here
+  return (
+    <div>
+      {/* invoke recursive method here */}
+    </div>
+  );
+}
 
-  render() {
-    return (
-      <div>
-        {/* invoke recursive method here */}
-      </div>
-    );
-  }
+RecursiveComponent.propTypes = {
+  components: PropTypes.arrayOf(PropTypes.elementType).isRequired,
 };
+
+export default RecursiveComponent;
